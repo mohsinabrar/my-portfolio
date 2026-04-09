@@ -92,8 +92,16 @@
 }
 
 @media (max-width: 768px) {
+  .experience {
+    padding: 4rem 0;
+  }
+
+  .experience-timeline {
+    max-width: 100%;
+  }
+
   .experience-timeline::before {
-    left: 24px;
+    left: 20px;
   }
 
   .experience-item {

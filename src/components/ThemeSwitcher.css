@@ -206,10 +206,16 @@
   color: var(--cyan);
 }
 
+@media (max-width: 1024px) {
+  .theme-menu {
+    min-width: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .theme-switcher-container {
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
   }
 
   .theme-button {
@@ -218,12 +224,14 @@
   }
 
   .theme-button-icon {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .theme-menu {
     bottom: 65px;
     min-width: 280px;
+    max-height: 70vh;
+    overflow-y: auto;
   }
 
   .theme-menu-content {
@@ -246,6 +254,54 @@
   .tab-button {
     font-size: 0.75rem;
     padding: 0.6rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-switcher-container {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .theme-button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .theme-button-icon {
+    font-size: 1rem;
+  }
+
+  .theme-menu {
+    bottom: 60px;
+    min-width: 260px;
+    right: -10px;
+  }
+
+  .theme-menu-content {
+    padding: 0.8rem;
+  }
+
+  .theme-options {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .theme-option {
+    padding: 0.6rem 0.5rem;
+  }
+
+  .theme-color {
+    height: 16px;
+  }
+
+  .tab-button {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.6rem;
+  }
+
+  .typography-option {
+    padding: 0.6rem;
   }
 }
 
